@@ -1,9 +1,11 @@
 let life = 3
 const like_update = document.querySelector('#life')
 const count_time = 2
+const play_width = 500, play_height = 800;
+const groundX = 150 + 25 , groundY = 50
+
 
 const { Engine, Render, World, Bodies, Events, Mouse } = Matter
-const play_width = 500, play_height = 800;
 const width = 800 , height = 800
 const speed = 10
 const perfectProperty = {
@@ -111,8 +113,8 @@ Events.on(engine, 'beforeUpdate', ev => {
 })
 
 let bricks = []
-for (let x = play_width / 2 + 50; x <= play_width - 100 ; x += 50) {
-	for (let y = 100; y < play_height - 500; y += 50) {
+for (let x = groundX + 25; x <= play_width + 100 ; x += 50) {
+	for (let y = groundY +10; y < height/2; y += 50) {
 		let brick = Bodies.rectangle(x, y, 40, 40, staticPerfectProperty)
 		brick.label = 'brick'
 		brick.render.strokeStyle = randomColorString()
@@ -161,7 +163,7 @@ Events.on(engine, 'beforeUpdate', ev => {
     }
     else{
         Matter.Sleeping.set(bar, false)
-        let xx = mapy(mouse.position.x, 0, 800, 65+150+25, 65+500)
+        let xx = mapy(mouse.position.x, 0, 800, groundX + 65, 65+500)
         Matter.Body.setPosition(bar, {x: xx, y: bar.position.y})
     }
 
