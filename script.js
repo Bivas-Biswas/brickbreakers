@@ -166,7 +166,6 @@ Events.on(engine, 'beforeUpdate', ev => {
         let xx = mapy(mouse.position.x, 0, 800, groundX + 65, 65+500)
         Matter.Body.setPosition(bar, {x: xx, y: bar.position.y})
     }
-
 })
 
 World.add(engine.world, [ball, bar,...bricks, ...walls])
@@ -177,3 +176,4 @@ function mapy(variable1, min1, max1, min2, max2){
     variable1 = min2+(max2-min2)*((variable1-min1)/(max1-min1))
     return variable1
 }
+
