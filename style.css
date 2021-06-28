@@ -183,3 +183,9 @@ button:hover{
     display: flex;
     flex-direction: column;
 }
+
+#home{
+    animation: none;
+    position: absolute;
+    margin-left: 50px;
+}
