@@ -173,6 +173,8 @@ Events.on(engine, 'collisionEnd', function (event) {
         let level_complete = document.createElement('h1')
         level_complete.setAttribute('id','level_complete')
         btn.innerHTML = "Home"
+        let home = document.querySelector('#homee')
+        document.body.removeChild(home)
         level_complete.innerHTML = "Game Completed 🎉"
         pop_up.appendChild(level_complete)
         pop_up.appendChild(btn)
