@@ -1,32 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chewy', cursive;
+    color: gold;
+}
 html,body {
     width: 100%;
     height: 100%;
-    margin: 0;
+    display: flex;
+    position: absolute;
+}
+a{
+    text-decoration: none;
+}
+#left{
+    position: relative;
+    display: flex;
+}
+#matterjs{
+    position: relative;
+    /*z-index: 10;*/
+}
+canvas{
+    width: 80vmin;
+    height: 80vmin;
+    /*border: 2px solid;*/
+}
+.level h1{
+    margin: 0 15px;
+    font-size: 3.5rem;
+ }
+
+#pop_up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
-canvas {
-    width: 80vmin;
-    height: 80vmin;
-    border: 2px solid;
+#lost{
+    font-size: 3.5rem;
+    color: red;
+    word-spacing: 3px;
+    animation: light 4s ease-in-out infinite;
+    margin-bottom: 30px;
+}
+@keyframes light {
+    0%{
+        text-shadow: 0 0 1px rgba(11, 8, 255, 0);
+
+    }
+    50%{
+        text-shadow: 0 0 40px rgba(11, 8, 255, 0.5);
+
+    }
+    100%{
+        text-shadow: 0 0 1px rgba(11, 8, 255, 1);
+
+    }
+}
+
+#level_complete{
+    font-size: 3.0rem;
+    text-align: center;
+    color: #03ff00;
+    word-spacing: 3px;
+    animation: light2 4s ease-in-out infinite;
+    margin-bottom: 30px;
+}
+@keyframes light2 {
+    0%{
+        text-shadow: 0 0 1px rgba(11, 8, 255, 0.51);
+
+    }
+    50%{
+        text-shadow: 0 0 10px rgba(78, 8, 255, 0.42);
+
+    }
+    100%{
+        text-shadow: 0 0 1px rgba(85, 157, 214, 0.35);
+
+    }
 }
 button{
-    position: absolute;
-    top: 50%;
-    padding: 10px;
-    font-size: 2rem;
-    background-color: aquamarine;
+    padding: 5px 10px;
+    font-size: 1.8rem;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    animation: btn 2s ease-in-out infinite;
+    background-color: rgba(65, 105, 225, 0.26);
+}
+@keyframes btn {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+
+}
+
+button:hover{
+    border: 2px solid gold;
+    transition: all 0.07s ease-in;
+    animation: none;
 }
 #timer{
     position: absolute;
-    top: 10%;
-    font-size: 10rem;
-    width: 300px;
+    inset: 0;
     text-align: center;
-    box-shadow: 0 0 10px #00000036;
-    border-radius: 10px;
     padding: 30px 0;
+    font-size: 10rem;
+    animation: kk 1s ease-in-out infinite;
+
+}
+
+@keyframes kk {
+
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+.sky {
+    position: absolute;
+    width: 100%;
+    background: #4b79a1; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+            to top,
+            #283e51,
+            #0a2342
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+            to top,
+            #283e51,
+            #0a2342
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -olinear-gradient(to top, #283e51, #0a2342);
+    height: 100vh;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png)
+    repeat top center;
+    z-index: -1;
+}
+.contanar{
+    display: flex;
+    margin: 40px auto;
+    flex-direction: row;
+    justify-content: center;
+}
+.result{
+    margin-left:40px;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
 }

@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chewy', cursive;
+    color: gold;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    animation: btn 4s ease-in-out infinite;
+    background-color: rgba(65, 105, 225, 0.26);
+}
+@keyframes btn {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.1);
+
+    }
+    100%{
+        transform: scale(0.8);
+
+    }
+
+}
+
+button:hover{
+    border: 2px solid gold;
+    transition: all 0.07s ease-in;
+    animation: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+
+}
+
+main h1:nth-child(1){
+    font-size: 4rem;
+    letter-spacing: 1px;
+    animation: light1 4s ease-in-out infinite;
+}
+
+@keyframes light1 {
+    0%{
+        text-shadow: 0 0 1px rgba(11, 8, 255, 0.51);
+
+    }
+    50%{
+        text-shadow: 0 0 10px rgba(78, 8, 255, 0.42);
+
+    }
+    100%{
+        text-shadow: 0 0 1px rgba(85, 157, 214, 0.35);
+
+    }
+}
+
+main h1:nth-child(2){
+    font-size: 4rem;
+    letter-spacing: 1px;
+    animation: light2 4s ease-in-out;
+    transform-origin: left ;
+}
+
+@keyframes light2 {
+    0%{
+        text-shadow: 0 0 1px rgba(11, 8, 255, 0.51);
+    }
+    50%{
+        text-shadow: 0 0 10px rgba(78, 8, 255, 0.42);
+    }
+
+    100%{
+        text-shadow: 0 0 1px rgba(85, 157, 214, 0.35);
+    }
+}
+.sky {
+    position: absolute;
+    width: 100%;
+    background: #4b79a1; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+            to top,
+            #283e51,
+            #0a2342
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+            to top,
+            #283e51,
+            #0a2342
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -olinear-gradient(to top, #283e51, #0a2342);
+    height: 100vh;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+.stars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png)
+    repeat top center;
+    z-index: -1;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.area{
+    background: none;
+
+    width: 100%;
+    height:100vh;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    /*background: rgba(255, 0, 0, 0.59);*/
+    animation: animate 10s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 0, 0, 0.59);
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    background: rgba(25, 36, 248, 0.59);
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    background: rgba(255, 213, 0, 0.59);
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+    background: rgba(0, 98, 32, 0.59);
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    background: rgba(111, 100, 248, 0.59);
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+    background: rgba(244, 0, 255, 0.59);
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+    background: rgba(0, 255, 98, 0.59);
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation-delay: 15s;
+    animation-duration: 45s;
+    background: rgba(255, 215, 0,1);
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+    background: rgba(170, 18, 119, 0.59);
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+    background: rgba(120, 86, 223, 0.59);
+}
+
+.circles li:nth-child(11){
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+    background: rgba(183, 190, 190, 0.59);
+}
+.circles li:nth-child(12){
+    left: 10%;
+    width: 200px;
+    height: 50px;
+    border-radius: 0;
+    animation-delay: 0s;
+    animation-duration: 11s;
+    background: rgb(0, 178, 211);
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
