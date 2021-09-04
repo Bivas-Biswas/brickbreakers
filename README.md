@@ -13,12 +13,23 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+Try to recap our 20s game memory, Enjoying Some moment, through this Repository. So, I created BrickBreakers Game. Use real life physics engine provided by 
+<a href="https://brm.io/matter-js/">Matter.js</a> javascript libary.
+### Game Walkthrough
+
+<a href="https://bivas-biswas.github.io/drumkit">
+    <p align="center">
+        <img src="images/home.gif">
+    <p align="center">Home Page </p>
+    </p>
+</a>
 
 ## Built With
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![](https://img.shields.io/badge/-matter.js-orange?style=for-the-badge)
+![MattterJS](https://img.shields.io/badge/-matter.js-orange?style=for-the-badge)
+![CanvasAPI](https://img.shields.io/badge/-CanvasApi-blue?style=for-the-badge)
 
 <!-- CONTRIBUTING -->
 ## Contributing
