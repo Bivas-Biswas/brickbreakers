@@ -18,6 +18,16 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+Try to recap our 20s game memory, Enjoying Some moment, through this Repository. So, I created BrickBreakers Game. Use real life physics engine provided by 
+<a href="https://brm.io/matter-js/">Matter.js</a> javascript libary.
+### Game Walkthrough
+
+<a href="https://bivas-biswas.github.io/drumkit">
+    <p align="center">
+        <img src="images/home.gif">
+    <p align="center">Home Page </p>
+    </p>
+</a>
 
 Try to recap our 20s game memory, Enjoying Some moment, through this Repository. So, I created BrickBreakers Game. Use real life physics engine provided by
 <a href="https://brm.io/matter-js/">Matter.js</a> javascript libary.
