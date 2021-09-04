@@ -1,6 +1,6 @@
 # BrickBreakers
 
-![BrickBreakers](https://socialify.git.ci/Bivas-Biswas/BrickBreakers/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FBivas-Biswas%2FBrickBreakers%2Fmain%2Fimages%2Flogo.png&owner=1&pulls=1&stargazers=1&theme=Dark)
+![BrickBreakers](https://socialify.git.ci/Bivas-Biswas/BrickBreakers/image?description=1&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FBivas-Biswas%2FBrickBreakers%2Fmain%2Fimages%2Flogo.png&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
 
 <!-- TABLE OF CONTENTS -->
 
