@@ -182,7 +182,7 @@ Events.on(engine, 'collisionEnd', function (event) {
         Engine.clear(engine);
         engine.events = {}
         btn.addEventListener('click', function (){
-            window.open('../home.html', '_self')
+            window.open('../index.html', '_self')
         })
     }
 });
