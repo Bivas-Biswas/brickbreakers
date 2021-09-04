@@ -194,18 +194,11 @@ Events.on(engine, 'beforeUpdate', ev => {
     }
     else{
         Matter.Sleeping.set(bar, false)
-        let xx = mapy(mouse.position.x, 0, 800, groundX + 65, 65+500)
-        Matter.Body.setPosition(bar, {x: xx, y: bar.position.y})
+        if(mouse.position.x >= groundX + 65 && mouse.position.x <= 565)
+            Matter.Body.setPosition(bar, {x: mouse.position.x, y: bar.position.y})
     }
 })
 
-
-function mapy(variable1, min1, max1, min2, max2){
-    variable1 = min2+(max2-min2)*((variable1-min1)/(max1-min1))
-    return variable1
-}
-
-// World.add(engine.world, [...bricks, ...walls, bar])
 timer()
 setTimeout(function (){
     World.add(engine.world, [ball, bar,...bricks, ...walls])
