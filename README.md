@@ -26,7 +26,7 @@ Try to recap our 20s game memory, Enjoying Some moment, through this Repository.
 <table align="center">
     <tr>
         <td>
-            <a href="https://bivas-biswas.github.io/drumkit" style="width: 100%">
+            <a href="https://bivas-biswas.github.io/BrickBreakers">
                 <p align="center">
                     <img src="images/home.gif">
                     <p align="center">Home Page</p>
@@ -34,7 +34,7 @@ Try to recap our 20s game memory, Enjoying Some moment, through this Repository.
             </a>
         </td>
         <td>
-            <a href="https://bivas-biswas.github.io/drumkit/pages/level01/level01.html" style="width: 100%">
+            <a href="https://bivas-biswas.github.io/BrickBreakers/pages/level01/level01.html" style="width: 100%">
                 <p align="center">
                     <img src="images/level01.gif">
                     <p align="center">Level One</p>
@@ -44,7 +44,7 @@ Try to recap our 20s game memory, Enjoying Some moment, through this Repository.
     </tr>
     <tr>
         <td>
-            <a href="https://bivas-biswas.github.io/drumkit/pages/level02/level02.html" style="width: 100%">
+            <a href="https://bivas-biswas.github.io/BrickBreakers/pages/level02/level02.html" style="width: 100%">
                 <p align="center">
                     <img src="images/level02.gif">
                     <p align="center">Level Two</p>
@@ -52,7 +52,7 @@ Try to recap our 20s game memory, Enjoying Some moment, through this Repository.
             </a>
         </td>
         <td>
-            <a href="https://bivas-biswas.github.io/drumkit/pages/level03/level03.html">
+            <a href="https://bivas-biswas.github.io/BrickBreakers/pages/level03/level03.html">
                 <p align="center">
                     <img src="images/level03.gif">
                     <p align="center">Level Three</p>
@@ -123,10 +123,10 @@ Contributions are what make the open source community such an amazing place to l
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Bivas-Biswas/drumkit.svg?style=for-the-badge
-[contributors-url]: https://github.com/Bivas-Biswas/drumkit/graphs/contributors
-[license-shield]: https://img.shields.io/github/license/Bivas-Biswas/drumkit.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Bivas-Biswas/BrickBreakers.svg?style=for-the-badge
+[contributors-url]: https://github.com/Bivas-Biswas/BrickBreakers/graphs/contributors
+[license-shield]: https://img.shields.io/github/license/Bivas-Biswas/BrickBreakers.svg?style=for-the-badge
+[license-url]: https://github.com/Bivas-Biswas/BrickBreakers/blob/master/LICENSE.txt
 
 <!-- social handle -->
 
